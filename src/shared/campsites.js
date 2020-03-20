@@ -177,7 +177,7 @@ export const CAMPSITES = [
                 id: 5,
                 rating: 5,
                 text:"So many beaches!",
-                author: "Naasir the Salafee",
+                author: "Naasir Salafee",
                 date: "2020-07-23T19:44Z"
             }
         ]
