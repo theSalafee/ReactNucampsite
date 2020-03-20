@@ -184,4 +184,4 @@ export const CAMPSITES = [
     }
 ];
 
-// Campsites
+// Camp
