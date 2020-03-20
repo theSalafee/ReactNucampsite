@@ -1,24 +1,16 @@
-//////////////
-// Imports //
-////////////
-// Make available 'React Component' from react //
 import React, { Component } from 'react';
-// Make available 'Navbar and NavbarBrand' from reactstrap //
-import { Navbar, NavbarBrand } from 'reactstrap';
-// Make available 'App.css' to the file //
 import './App.css';
+import { Navbar, NavbarBrand } from 'reactstrap';
+import Directory from './components/DirectoryComponent';
 
-/* Create a React component and render
-   it to the screen */
- 
-   
-class App extends Component { // App is a subclass of Component
-  render() { // render function
-    return ( // render() returns a div named 'App'
-      <div className="App"> {/* 'className' must be used */}
-        <Navbar dark color="dark">
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <Navbar dark color="primary">
           <div className="container">
             <NavbarBrand href="/">NuCamp</NavbarBrand>
+            <Directory />
           </div>
         </Navbar>
       </div>
@@ -26,4 +18,4 @@ class App extends Component { // App is a subclass of Component
   }
 }
 
-export default App; // export a particular module or a named parameter or a combination
+export default App;
