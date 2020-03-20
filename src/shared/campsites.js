@@ -172,6 +172,13 @@ export const CAMPSITES = [
                 text: "The stars at night were magnificent!",
                 author: "Ann Dabramov",
                 date: "2018-07-23T19:44Z"
+            },
+            {
+                id: 5,
+                rating: 5,
+                text:"So many beaches!",
+                author: "Naasir the Salafee",
+                date: "2020-07-23T19:44Z"
             }
         ]
     }
