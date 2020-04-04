@@ -5,15 +5,13 @@ import { Link } from 'react-router-dom';
 function RenderPartner({ partner }) {
     if (partner) {
         return (
-            <Media tag="li">
-                <Media>
-                    <Media object src={partner.image} alt={partner.name} width={150} height={"auto"} />
-                </Media>
-                <Media body className="ml-5">
+            <React.Fragment>
+                <Media object src={partner.image} alt={partner.name} width="150" />
+                <Media body className="ml-5 mb-4">
                     <Media heading>{partner.name}</Media>
                     {partner.description}
                 </Media>
-            </Media>
+            </React.Fragment>
         );
     }
     return <div />;
@@ -23,9 +21,9 @@ function About(props) {
 
     const partners = props.partners.map(partner => {
         return (
-            <div key={partner.id}>
+            <Media tag="li" key={partner.id}>
                 <RenderPartner partner={partner} />
-            </div>
+            </Media>
         );
     });
 
